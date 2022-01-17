@@ -36,6 +36,6 @@ const orderSchema = new Schema({
     required: true,
   },
 });
-const Order = mongoose.model("User", orderSchema);
+const Order = mongoose.model("Order", orderSchema);
 
-module.export = Order;
+module.exports = Order;

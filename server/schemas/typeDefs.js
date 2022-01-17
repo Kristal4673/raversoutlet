@@ -2,7 +2,7 @@ const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
   type User {
-    _id: ID
+    _id: ID!
     firstName: String!
     lastName: String!
     email: String!
@@ -11,6 +11,7 @@ const typeDefs = gql`
   }
 
   type Product {
+    _id: ID!
     name: String!
     price: Float!
     image: String
@@ -20,10 +21,12 @@ const typeDefs = gql`
   }
 
   type Category {
+    _id: ID!
     name: String!
   }
 
   type Order {
+    _id: ID!
     productName: String!
     price: Float!
     image: String
@@ -35,15 +38,21 @@ const typeDefs = gql`
   }
 
   type Query {
-    profiles: [Profile]!
-    profile(profileId: ID!): Profile
+    users: [User]!
+    user(userId: ID!): User!
+    
+    products: [Product]!
+    product(productId: ID): Product!
+
+    orders: [Order] 
+    order(orderId: ID): Order!
+    
+    categories: [Category]!
+    category(categoryId: ID): Category! 
   }
 
   type Mutation {
-    addProfile(name: String!): Profile
-    addSkill(profileId: ID!, skill: String!): Profile
-    removeProfile(profileId: ID!): Profile
-    removeSkill(profileId: ID!, skill: String!): Profile
+    addUser(firstName: String!, lastName: String!, email: String!, phoneNumber: Int, address: String!): User
   }
 `;
 

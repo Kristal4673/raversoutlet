@@ -1,13 +1,15 @@
 const mongoose = require('mongoose');
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/tech-friends',
+  process.env.MONGODB_URI || 'mongodb://localhost/raversoutlet',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
   }
-);
+).then(res => {
+  console.log('Database connected')
+}).catch(err => {
+  console.log(err);
+});
 
 module.exports = mongoose.connection;
