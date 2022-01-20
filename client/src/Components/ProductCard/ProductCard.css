@@ -1,0 +1,11 @@
+.product-quantity{
+    font-weight: 200;
+}
+
+.product-name{
+    text-transform: capitalize;
+}
+
+.product{
+    border: 2px solid black;
+}

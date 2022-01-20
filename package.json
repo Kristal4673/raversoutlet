@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "develop": "cd client && npm run start",
+    "server" : "cd server && nodemon server.js",
+    "develop": "concurrently  \"cd client && npm start\" \"cd server && npm run seed && nodemon server.js\"",
+    "seed": "cd server && npm run seed",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/Kristal4673/raversoutlet/issues"
   },
-  "homepage": "https://github.com/Kristal4673/raversoutlet#readme"
+  "homepage": "https://github.com/Kristal4673/raversoutlet#readme",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
