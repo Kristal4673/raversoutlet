@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 
-import "./style.css";
+import "./Navbar.css";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -22,7 +22,7 @@ function Navbar() {
             className="nav-logo"
             offset={-80}
           >
-            Crystal Soto
+            Ravers Outlet
             <i className="fa fa-code"></i>
           </Link>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
