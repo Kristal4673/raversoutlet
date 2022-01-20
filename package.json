@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server" : "cd server && nodemon server.js",
-    "develop": "concurrently  \"cd client && npm start\" \"cd server && npm run seed && nodemon server.js\"",
-    "seed": "cd server && npm run seed",
+    "start": "concurrently \"cd server && node seeders/seed.js && node server.js\" \"cd client && npm run start\" ",
+    "develop": "cd client && npm run start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

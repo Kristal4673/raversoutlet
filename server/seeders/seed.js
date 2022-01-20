@@ -9,7 +9,7 @@ db.once("open", async () => {
     await User.deleteMany({});
     await User.create(userSeeds);
     await Product.deleteMany({});
-    const products = await Product.insertMany(productsSeed);
+    const products = await Product.create(productsSeed);
   
     console.log("Products seeded!");
     console.log("Users seeded!");
