@@ -1,0 +1,33 @@
+[
+  {
+    "name": "sexy shirt",
+    "price": "45",
+    "quantity": "50"
+  },
+  {
+    "name": "tie dye shirt",
+    "price": "25",
+    "quantity": "50"
+  },
+  {
+    "name": "neon green pants",
+    "price": "40",
+    "quantity": "40"
+  },
+  {
+    "name": "neon orange pants",
+    "price": "40",
+    "quantity": "50"
+  },
+  {
+    "name": "neon green pants",
+    "price": "40",
+    "quantity": "50"
+  },
+  {
+    "name": "Illenium Jersey",
+    "price": "80",
+    "quantity": "15",
+    "category": ""
+  }
+]

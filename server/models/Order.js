@@ -26,9 +26,9 @@ const orderSchema = new Schema({
   shipping: {
     type: String,
   },
-  history: {
-    type: String,
-  },
+  // history: {
+  //   type: String,
+  // },
 
   category: {
     type: Schema.Types.ObjectId,
