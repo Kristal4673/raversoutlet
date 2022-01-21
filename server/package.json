@@ -2,7 +2,7 @@
   "name": "ravers-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "startDev": "nodemon server.js",
     "seed": "node seeders/seed.js",
