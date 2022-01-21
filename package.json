@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "concurrently \"cd server && node seeders/seed.js && node server.js\" \"cd client && npm run start\" ",
     "develop": "cd client && npm run start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/Kristal4673/raversoutlet/issues"
   },
-  "homepage": "https://github.com/Kristal4673/raversoutlet#readme"
+  "homepage": "https://github.com/Kristal4673/raversoutlet#readme",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
