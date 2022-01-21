@@ -1,0 +1,27 @@
+.products-ctn{
+    margin: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+
+    
+}
+
+@media only screen and (min-width: 960px){
+    .products-ctn{
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 10rem;
+    }
+
+    .main-filter{
+        width: 40%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main-searchbar-input{
+        width: 40%;
+    }
+}

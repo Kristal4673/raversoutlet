@@ -19,7 +19,10 @@
     "url": "https://github.com/Kristal4673/raversoutlet/issues"
   },
   "homepage": "https://github.com/Kristal4673/raversoutlet#readme",
-  "devDependencies": {
+  "dependencies": {
     "concurrently": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
