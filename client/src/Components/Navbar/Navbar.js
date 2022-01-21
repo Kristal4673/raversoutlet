@@ -28,7 +28,7 @@ function Navbar() {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link
-                to="about"
+                to="products"
                 className="nav-links"
                 spy={true}
                 smooth={true}
@@ -36,13 +36,13 @@ function Navbar() {
                 // offset={-50}
                 activeClass="link-active"
               >
-                About
+                Products
             
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="portfolio"
+                to="wishlist"
                 className="nav-links"
                 spy={true}
                 smooth={true}
@@ -50,12 +50,12 @@ function Navbar() {
                 // offset={-50}
                 activeClass="link-active"
               >
-                Portfolio
+                Wishlist
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="contact"
+                to="checkout"
                 className="nav-links"
                 spy={true}
                 smooth={true}
@@ -63,12 +63,12 @@ function Navbar() {
                 // offset={-50}
                 activeClass="link-active"
               >
-                Contact
+                Checkout
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="resume"
+                to="account"
                 className="nav-links"
                 spy={true}
                 smooth={true}
@@ -76,7 +76,7 @@ function Navbar() {
                 // offset={-50}
                 activeClass="link-active"
               >
-                Resume
+                Account info
               </Link>
             </li>
           </ul>
