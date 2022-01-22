@@ -15,7 +15,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="nav-container">
           <Link
-            to="home"
+            to="/"
             spy={true}
             smooth={true}
             duration={500}
@@ -28,7 +28,7 @@ function Navbar() {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link
-                to="products"
+                to="/products"
                 className="nav-links"
                 spy={true}
                 smooth={true}
@@ -42,7 +42,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="wishlist"
+                to="/wishlist"
                 className="nav-links"
                 spy={true}
                 smooth={true}

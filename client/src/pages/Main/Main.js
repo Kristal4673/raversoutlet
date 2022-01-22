@@ -18,7 +18,7 @@ function Main() {
     return <div>Loading...</div>
   }
 
-  const products = data?.products;
+  const products = data.products;
 
   return( 
     <div>
