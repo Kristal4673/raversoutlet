@@ -18,16 +18,16 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Main/>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Main />} />
           <Route path="/login" element={<Login />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/profile" element={<Profiler />} />
           <Route path="/main/category/:name" element={<Main/>} />
-          <Route path="/product/:id" element={<Product />} />
+          <Route path="/products" element={<Product />} />
           <Route path="/signup" element={<SignUp />} />
         </Routes>
       </Router>
