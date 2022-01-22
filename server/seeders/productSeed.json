@@ -2,31 +2,109 @@
   {
     "name": "sexy shirt",
     "price": "45",
-    "quantity": "50"
+    "quantity": "50",
+    "category": "Tops"
   },
   {
     "name": "tie dye shirt",
     "price": "25",
-    "quantity": "50"
+    "quantity": "50",
+    "category": "Tops"
   },
   {
     "name": "neon green pants",
     "price": "40",
-    "quantity": "40"
+    "quantity": "40",
+    "category": "Bottoms"
   },
   {
     "name": "neon orange pants",
     "price": "40",
-    "quantity": "50"
+    "quantity": "50",
+    "category": "Bottoms"
   },
   {
     "name": "neon green pants",
     "price": "40",
-    "quantity": "50"
+    "quantity": "50",
+    "category": "Bottoms"
   },
   {
-    "name": "Illenium Jersey",
+    "name": "LED light up sneakers",
     "price": "80",
-    "quantity": "15"
+    "quantity": "15",
+    "category": "Shoe"
+  },
+  {
+    "name": "Rainbow skirt",
+    "price": "25",
+    "quantity": "15",
+    "category": "Bottoms"
+  },
+  {
+    "name": "Rainbow hat",
+    "price": "10",
+    "quantity": "15",
+    "category": "accessories"
+  },
+  {
+    "name": "Neon green hat",
+    "price": "10",
+    "quantity": "15",
+    "category": "accessories"
+  },
+  {
+    "name": "PLUR Graphic Tee",
+    "price": "10",
+    "quantity": "20",
+    "category": "Tops"
+  },
+  {
+    "name": "Lion Graphic Tee ",
+    "price": "15",
+    "quantity": "15",
+    "category": "Tops"
+  },
+  {
+    "name": "Spaced Out Joggers",
+    "price": "25",
+    "quantity": "15",
+    "category": "Bottoms"
+  },
+  {
+    "name": "Eat Rave Love Joggers",
+    "price": "25",
+    "quantity": "15",
+    "category": "Bottoms"
+  },
+  {
+    "name": "Suns Out Guns Out Tank",
+    "price": "15",
+    "quantity": "15",
+    "category": "Top"
+  },
+  {
+    "name": "Bunny Onesie",
+    "price": "25",
+    "quantity": "15",
+    "category": "Top"
+  },
+  {
+    "name": "PLUR Crop top",
+    "price": "25",
+    "quantity": "15",
+    "category": "Top"
+  },
+  {
+    "name": "Pink Tutu",
+    "price": "20",
+    "quantity": "15",
+    "category": "Bottoms"
+  },
+  {
+    "name": "Rainbow Vans",
+    "price": "45",
+    "quantity": "15",
+    "category": "Shoes"
   }
 ]
