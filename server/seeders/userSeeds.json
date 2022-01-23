@@ -4,20 +4,23 @@
     "lastName" : "Kernighan",
     "email" : "brain@brian.com",
     "phoneNumber": "1234567890",
-    "address" : "123 Four Dr."
+    "address" : "123 Four Dr.",
+    "password": "password12345"
   },
   {
     "firstName" : "Neil",
     "lastName" : "Juanillo",
     "email" : "neil@neil.com",
     "phoneNumber": "1224537890",
-    "address" : "111 Two Dr."
+    "address" : "111 Two Dr.",
+    "password": "password54321"
   },
   {
     "firstName" : "Kent",
     "lastName" : "Clark",
     "email" : "kent@kent.com",
     "phoneNumber": "1231156782",
-    "address" : "123 Four Dr."
+    "address" : "123 Four Dr.",
+    "password": "password56789"
   }
 ]
