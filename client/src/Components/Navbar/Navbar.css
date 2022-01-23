@@ -31,6 +31,11 @@
   max-width: 1500px;
 }
 
+.nav-container:first-child a{
+  color: #f5b921;
+  text-decoration: none;
+}
+
 .main-container {
   position: absolute;
   top: 0;
@@ -39,6 +44,7 @@
   right: 0;
   background-color: rgba(0, 0, 0, 0.3);
 }
+
 
 .nav-logo {
   color: #f5b921;
@@ -70,6 +76,10 @@
 .nav-item {
   line-height: 40px;
   margin-right: 1rem;
+}
+
+.nav-item a{
+  color: white;
 }
 
 .nav-item:after {
