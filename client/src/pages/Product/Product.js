@@ -1,5 +1,5 @@
 import { useQuery } from '@apollo/client';
-import React, { useEffect } from 'react';
+import React, {  } from 'react';
 import { QUERY_PRODUCT } from '../../utils/queries';
 import loadingIcon from '../../img/loading-icon.png'
 import './Product.css';
@@ -27,13 +27,13 @@ const Product = () => {
     console.log('no data');
   }
 
-  const { __typename, _id, category, name, price, quantity } = data?.product;
+  const {  category, name, price, quantity } = data?.product;
   
 
   return (
     <div className='product-ctn'>
       <div className='product-photo'>
-        <img src={loadingIcon} />
+        <img alt={`${name}`} src={loadingIcon} />
       </div>
       <div className='product-body'>
         <h1 className='product-name'>{name}</h1>
