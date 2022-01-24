@@ -108,6 +108,14 @@
   display: none;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: #ced4da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 800px) {
   .page-width {
     width: 100%;
