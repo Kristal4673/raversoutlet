@@ -1,6 +1,6 @@
 import {BrowserRouter as Router, renderMatches, Route, Routes} from 'react-router-dom'
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
+import NavBar from './Components/Navbar/NavBar';
 import Main from './pages/Main/Main';
 import { ApolloClient } from '@apollo/client';
 import Footer from './Components/Footer/Footer';
@@ -19,6 +19,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Router>
+        <NavBar />
+        {/* <Main /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Main />} />
@@ -26,6 +28,8 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/profile" element={<Profiler />} />
+          <Route path="/main/category/:name" element={<Main />} />
+          <Route path="/product/:id" element={<Product />} />
           <Route path="/main/category/:name" element={<Main/>} />
           <Route path="/products" element={<Product />} />
           <Route path="/signup" element={<SignUp />} />
