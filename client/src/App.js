@@ -12,6 +12,7 @@ import Product from './pages/Product/Product';
 import SignUp from './pages/SignUp/SignUp';
 // import Profile from './pages/Profile/Profile';
 import { Profiler } from 'react';
+import Shop from './pages/Shop/Shop';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/profile" element={<Profiler />} />
           <Route path="/main/category/:name" element={<Main />} />
+          <Route path="/shop" element={<Shop />} />
           <Route path="/product/:id" element={<Product />} />
           <Route path="/signup" element={<SignUp />} />
         </Routes>

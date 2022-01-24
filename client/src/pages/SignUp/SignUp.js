@@ -8,8 +8,11 @@ import { Link } from "react-router-dom";
 
 const Signup = () => {
   const [formState, setFormState] = useState({
-    name: "",
+    firstName: "",
+    lastName:"",
     email: "",
+    number: 1, 
+    address:"",
     password: "",
   });
   // const [addProfile, { error, data }] = useMutation(ADD_PROFILE);

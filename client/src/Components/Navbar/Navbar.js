@@ -23,8 +23,8 @@ const NavBar = () => {
               className="me-auto my-2 my-lg-0 nav-flex-end animate slideIn"
               navbarScroll
             >
-              <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Shop</Nav.Link>
+              <Link className="nav-link" to="/">Home</Link>
+              <Link className="nav-link" to="/shop">Shop</Link>
               <NavDropdown title="Categories" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Shirts</NavDropdown.Item>
                 <NavDropdown.Divider />
