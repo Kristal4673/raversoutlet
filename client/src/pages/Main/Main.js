@@ -1,7 +1,7 @@
 import { useQuery } from '@apollo/client';
 import React from 'react';
 import Searchbar from '../../Components/Searchbar/Searchbar';
-import { QUERY_PRODUCTS } from '../../utils/queries';
+import  { QUERY_PRODUCTS }  from '../../utils/queries';
 import ProductCard from '../../Components/ProductCard/ProductCard';
 import Filter from '../../Components/Filter/Filter';
 import './Main.css'
@@ -19,7 +19,7 @@ function Main() {
   }
 
   const products = data.products;
-
+  
   return( 
     <div>
         <Searchbar />
@@ -27,7 +27,9 @@ function Main() {
         <div className='products-ctn'>
           {products.map((product) =>{
             return (
-              <ProductCard name={product.name} quantity={product.quantity} price={product.price}/>
+              <a href={`shop/${product._id}`}>
+                <ProductCard name={product.name} quantity={product.quantity} price={product.price}/>
+              </a>
             )
           })}
         </div>

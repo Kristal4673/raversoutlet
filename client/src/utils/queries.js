@@ -10,3 +10,15 @@ query {
     }
   }
 `;
+
+export const QUERY_PRODUCT = gql`
+query($productId: ID) {
+  product(productId: $productId){
+    _id
+    name
+    price
+    quantity
+    category
+  } 
+}
+`

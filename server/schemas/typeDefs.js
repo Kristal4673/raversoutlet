@@ -17,7 +17,7 @@ const typeDefs = gql`
     image: String
     quantity: Int!
     description: String
-    category: Category
+    category: String
   }
 
   type Category {
