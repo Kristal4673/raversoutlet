@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import {
   Navbar,
@@ -10,7 +10,16 @@ import {
   Button,
 } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Auth from '../../utils/auth';
+import Login from '../../pages/Login/Login';
+
+
 const NavBar = () => {
+
+  const [login, setLogin] = useState(false);
+
+  
+
   return (
     <div className="page-width" bg="light">
       <Navbar expand='md'>
@@ -50,7 +59,11 @@ const NavBar = () => {
             {/* <FontAwesomeIcon icon={faShoppingCart} /> */}
             <i className='fa fa-shopping-cart' />
           </div>
-          <Button><Link className='link-btn' to='/login'>Login</Link></Button>
+          {Auth.loggedIn() ? 
+          <Button><Link className='link-btn' onClick={Auth.logout()} to='/'>Logout</Link></Button>
+          : 
+          <Button><Link className='link-btn' to='/login'>Login</Link></Button>}
+          
         </div>
       </div>
     </div>

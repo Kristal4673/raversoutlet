@@ -4,11 +4,12 @@ import LOGO from '../../img/RAVERSOUTLET.png';
 import { useMutation } from "@apollo/client";
 import { LOGIN_USER } from "../../utils/mutations";
 
+import Auth from "../../utils/auth";
 
 function Login() {
 
     const [formState, setFormState] = useState({ email: "", password: "" });
-    // const [login, { error, data }] = useMutation(LOGIN_USER);
+    const [login, { error, data }] = useMutation(LOGIN_USER);
 
     // update state based on form input changes
     const handleChange = (event) => {
@@ -23,17 +24,17 @@ function Login() {
   // submit form
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    console.log(formState);
-    // try {
-    //   //send neil variable names 
-    //   const { data } = await login({
-    //     variables: { ...formState },
-    //   });
-
-    //   Auth.login(data.login.token);
-    // } catch (e) {
-    //   console.error(e);
-    // }
+    console.log('formState: ',formState);
+    try {
+   
+        const { data } = await login({
+          variables: { ...formState },
+        });
+        
+        Auth.login(data.login.token);
+      } catch (e) {
+        console.error(e);
+      }
 
     // clear form values
     setFormState({
@@ -46,17 +47,17 @@ function Login() {
         <div className='form'>
             <div className='form-ctn'>
                 <div className='form-title'>Login</div>
-                <div className=''>
+                <form>
                     <div className='form-input'>
                         <label htmlFor='email'>Email</label>
-                        <input id='email' type="email" placeholder='@email.com' />
+                        <input name='email' id='email' type="email" placeholder='enter email' value={formState.email} onChange={handleChange}/>
                     </div>
                     <div className='form-input'>
                         <label>Password</label>
-                        <input type="text" placeholder='*****'/>
+                        <input name='password' type="password" placeholder='*****' value={formState.password} onChange={handleChange}/>
                     </div>
                     <button onClick={handleFormSubmit} className='form-btn'>Enter</button>
-                </div>
+                </form>
             </div>
             <img className='ravers-logo' alt='raversoutlet' src={LOGO}/>
         </div>
