@@ -22,7 +22,7 @@ const NavBar = () => {
               className='me-auto my-2 my-lg-0 nav-flex-end animate slideIn'
               navbarScroll
             >
-              <Link className='nav-link' to='/'>Home</Link>
+              <Link className='nav-link' to='/home'>Home</Link>
               <Link className='nav-link' to='/shop'>Shop</Link>
               <NavDropdown title='Categories' id='navbarScrollingDropdown'>
                 <NavDropdown.Item href='#action3'>Shirts</NavDropdown.Item>
