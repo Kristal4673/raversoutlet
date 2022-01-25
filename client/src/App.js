@@ -1,6 +1,6 @@
 import {BrowserRouter as Router, renderMatches, Route, Routes} from 'react-router-dom'
 import './App.css';
-import NavBar from './Components/Navbar/NavBar';
+import Navbar from './Components/Navbar/Navbar';
 import Main from './pages/Main/Main';
 import { ApolloClient } from '@apollo/client';
 import Footer from './Components/Footer/Footer';
@@ -18,9 +18,8 @@ import Shop from './pages/Shop/Shop';
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <Router>
-        <NavBar />
+        <Navbar />
         {/* <Main /> */}
         <Routes>
           <Route path="/" element={<Home />} />

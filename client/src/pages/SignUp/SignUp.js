@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Form from "react-bootstrap/Form";
+import Form from "react-bootstrap";
 import "./SignUp.css";
 
 // import { useMutation } from "@apollo/client";
