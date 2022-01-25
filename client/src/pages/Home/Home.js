@@ -11,10 +11,9 @@ function Home() {
                 <button>Sign in</button>
                 <button>Sign up!</button>
             </div>
-           
         </div>
-    )
-}
+    );
+};
 
 export default Home
 
