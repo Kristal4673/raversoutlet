@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Form from "react-bootstrap/Form";
+import "./SignUp.css";
 
 // import { useMutation } from "@apollo/client";
 // import { ADD_PROFILE } from "../../utils/mutations";
@@ -11,7 +13,7 @@ const Signup = () => {
     firstName: "",
     lastName:"",
     email: "",
-    number: 1, 
+    number: "", 
     street_address: "",
     city: "",
     state: "",

@@ -1,3 +1,13 @@
-.form-input{
-    
+.card-body{
+    display: block;
+    width: 35%
+}
+div.card{
+    display: block;
+    margin: 5px;
+
+}
+
+.form{
+    display: block; 
 }
