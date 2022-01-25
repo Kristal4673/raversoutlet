@@ -1,0 +1,15 @@
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+  .hero-image {
+    background-image: linear-gradient(
+      to right,
+      rgba(245, 246, 252, 0.5),
+      rgba(117, 19, 93, 0.5)
+    ),
+    url("./home.png");
+
+  /* Set a specific height */
+  height: 50%;
