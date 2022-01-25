@@ -6,7 +6,7 @@ import { ApolloClient } from '@apollo/client';
 import Footer from './Components/Footer/Footer';
 import Cart from "./pages/Cart/Cart";
 import Checkout from "./pages/Checkout/Checkout";
-import Login from "./pages/Login/Login";
+import Login from "./Components/Forms/Login";
 import Home from './pages/Home/Home';
 import Product from './pages/Product/Product';
 import SignUp from './pages/SignUp/SignUp';

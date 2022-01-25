@@ -42,38 +42,48 @@ const Login = (props) => {
   };
 
   return (
-    <main className="flex-row justify-center mb-4">
-      <div className="col-12 col-lg-10">
-        <div className="card">
-          <h4 className="card-header bg-dark text-light p-2">Login</h4>
-          <div className="card-body">
-            <form onSubmit={handleFormSubmit}>
-              <input
-                className="form-input"
-                placeholder="Your email"
-                name="email"
-                type="email"
-                value={formState.email}
-                onChange={handleChange}
-              />
-              <input
-                className="form-input"
-                placeholder="******"
-                name="password"
-                type="password"
-                value={formState.password}
-                onChange={handleChange}
-              />
-              <button
-                className="btn btn-block btn-info"
-                style={{ cursor: "pointer" }}
-                type="submit"
-              >
-                Submit
-              </button>
-            </form>
+    <main className="container">
+      <div className="row">
+        <div className="col-0-sm"></div>
+          <div className="card">
+            <h4 className="card-header bg-dark text-light p-2">Login</h4>
+            <div className="card-body m-2">
+
+              <form className="" onSubmit={handleFormSubmit}>
+                <div className="mb-3">
+                  <input
+                    className="form-input"
+                    placeholder="Your email"
+                    name="email"
+                    type="email"
+                    value={formState.email}
+                    onChange={handleChange}
+                  />
+                </div>
+
+                <div className="mb-3">
+                  <input
+                   className="form-input"
+                   placeholder="******"
+                   name="password"
+                   type="password"
+                   value={formState.password}
+                    onChange={handleChange}
+                 />
+                </div>
+
+                <button
+                  className="btn btn-block btn-info"
+                  style={{ cursor: "pointer" }}
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </form>
+
+            </div>
           </div>
-        </div>
+        <div className="col-0-sm"></div>
       </div>
     </main>
   );
