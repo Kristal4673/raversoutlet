@@ -7,7 +7,8 @@ import './Product.css';
 const Product = () => {
 
   const url = window.location.href;
-  const productId = url.substring(27);
+  const endIndex = url.lastIndexOf('/');
+  const productId = url.substring(endIndex + 1);
   console.log(productId);
 
 
