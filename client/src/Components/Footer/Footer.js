@@ -15,8 +15,7 @@ function Footer() {
                             <li>Shirts</li>
                             <li>Pants</li>
                             <li>Shoes</li>
-                            <li>Accessories</li> 
-                             
+                            <li>Accessories</li>   
                         </ul>
                     </div>
                     {/* Column 2 */}

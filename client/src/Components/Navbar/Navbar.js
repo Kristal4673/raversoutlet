@@ -12,7 +12,7 @@ import {
 import { Link } from 'react-router-dom';
 import Auth from '../../utils/auth';
 import Login from '../../pages/Login/Login';
-
+import LOGO from '../../img/RAVERSOUTLET.png';
 
 const NavBar = () => {
 
@@ -21,49 +21,22 @@ const NavBar = () => {
   
 
   return (
-    <div className="page-width" bg="light">
-      <Navbar expand='md'>
-        <Container fluid>
-          <Navbar.Brand href='#'>Ravers Outlet</Navbar.Brand>
-          <Navbar.Toggle aria-controls='navbarScroll' />
-          <Navbar.Collapse id='navbarScroll'>
-            <Nav
-              className='me-auto my-2 my-lg-0 nav-flex-end animate slideIn'
-              navbarScroll
-            >
-              <Link className='nav-link' to='/home'>Home</Link>
-              <Link className='nav-link' to='/shop'>Shop</Link>
-              <NavDropdown title='Categories' id='navbarScrollingDropdown'>
-                <NavDropdown.Item href='#action3'>Shirts</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href='#action4'>Pants</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href='#action5'>Shoes</NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-      <div className='d-flex flex-row justify-content-between'>
-        <div className='input-search-group'>
-          <InputGroup>
-            <FormControl placeholder='Search...' aira-label='Search Bar' />
-            <div className='search-icon-style'>
-              {/* <FontAwesomeIcon icon={faSearch} /> */}
-              <i className='fa fa-search'/>
-            </div>
-          </InputGroup>
+    <div className="custom-navbar">
+      <div className='logo-ctn'>
+        <img className='navbar-logo' src={LOGO}/>
+      </div>
+      <div className='navbar-itmes'>
+        <div className='navbar-items-left'>
+          <a href='/'>TOPS</a>
+          <a href='/'>BOTTOMS</a>
+          <a href='/'>SHOES</a>
+          <a href='/'>ACCESSORIES</a>
+          <a className="fas fa-search"></a>
         </div>
-        <div className='d-flex flex-row justify-content-between'>
-          <div className='d-flex align-items-center p-2 me-2'>
-            {/* <FontAwesomeIcon icon={faShoppingCart} /> */}
-            <i className='fa fa-shopping-cart' />
-          </div>
-          {Auth.loggedIn() ? 
-          <Button><Link className='link-btn' onClick={Auth.logout()} to='/'>Logout</Link></Button>
-          : 
-          <Button><Link className='link-btn' to='/login'>Login</Link></Button>}
-          
+        <div className='navbar-items-right'>
+          <a href='/'>LOGIN</a>
+          <a href='/'>SIGN UP</a>
+          <a href='/'>LOGOUT</a>
         </div>
       </div>
     </div>
