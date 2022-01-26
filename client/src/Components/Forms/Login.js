@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Form.css'
 import LOGO from '../../img/RAVERSOUTLET.png';
 import { useMutation } from "@apollo/client";
@@ -24,14 +24,15 @@ function Login() {
   // submit form
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    console.log('formState: ',formState);
+  
     try {
-   
         const { data } = await login({
           variables: { ...formState },
         });
         
+
         Auth.login(data.login.token);
+        console.log('local storage saved');
       } catch (e) {
         console.error(e);
       }

@@ -24,7 +24,7 @@ class AuthService {
     return localStorage.getItem("id_token");
   }
   login(idToken) {
-    window.localStorage.setItem("id_token", idToken);
+    localStorage.setItem("id_token", idToken);
     window.location.assign("/home");
   }
   logout() {
