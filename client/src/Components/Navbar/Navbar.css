@@ -1,0 +1,35 @@
+.page-width {
+  width: calc(100% - 15rem);
+  margin: auto;
+}
+.nav-flex-end {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.input-search-group {
+  width: 60%;
+}
+.search-icon-style {
+  width: 45px;
+  border: solid 1px #CED4DA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-btn {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-link {
+  text-decoration: none;
+  color: #CED4DA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .page-width {
+    width: 100%;
+  }
+}
