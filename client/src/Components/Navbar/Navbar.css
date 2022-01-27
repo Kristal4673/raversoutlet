@@ -4,6 +4,10 @@
   justify-content: space-between;
 }
 
+.hamburger-menu{
+  display: none;
+}
+
 .navbar-itmes{
   display: flex;
   justify-content: space-between;
@@ -18,7 +22,7 @@
 }
 
 .navbar-items-left:last-child{
-  
+  font-weight: 600;
 }
 
 .navbar-items-left{

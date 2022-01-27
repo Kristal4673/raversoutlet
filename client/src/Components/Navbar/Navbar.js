@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 import {
   Navbar,
@@ -18,24 +18,30 @@ const NavBar = () => {
 
   const [login, setLogin] = useState(false);
 
+  useEffect(() => {
+
+  })
   
 
   return (
     <div className="custom-navbar">
       <div className='logo-ctn'>
-        <img className='navbar-logo' src={LOGO}/>
+        <a href='/home'><img className='navbar-logo' src={LOGO}/></a>
       </div>
       <div className='navbar-itmes'>
         <div className='navbar-items-left'>
-          <a href='/'>TOPS</a>
-          <a href='/'>BOTTOMS</a>
-          <a href='/'>SHOES</a>
-          <a href='/'>ACCESSORIES</a>
-          <a className="fas fa-search"></a>
+          <i class="fas fa-bars hamburger-menu"></i>
+          <div>
+            <a href='/'>TOPS</a>
+            <a href='/'>BOTTOMS</a>
+            <a href='/'>SHOES</a>
+            <a href='/'>ACCESSORIES</a>
+          </div>
+          <a href='/shop'>SEARCH</a>
         </div>
         <div className='navbar-items-right'>
-          <a href='/'>LOGIN</a>
-          <a href='/'>SIGN UP</a>
+          <a href='/login'>LOGIN</a>
+          <a href='/signup'>SIGN UP</a>
           <a href='/'>LOGOUT</a>
         </div>
       </div>
