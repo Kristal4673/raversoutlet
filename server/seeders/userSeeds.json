@@ -2,7 +2,7 @@
   {
     "firstName" : "Brian",
     "lastName" : "Kernighan",
-    "email" : "brain@brian.com",
+    "email" : "brian@brian.com",
     "phoneNumber": "1234567890",
     "address" : "123 Four Dr.",
     "password": "password12345"

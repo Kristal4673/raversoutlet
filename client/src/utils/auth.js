@@ -6,7 +6,8 @@ class AuthService {
   }
   loggedIn() {
     const token = this.getToken();
-    return !!token && !this.isTokenExpired(token);
+    // return !!token && !this.isTokenExpired(token);
+    return token ? true : false
   }
   //   Do we want an experation?
   //   isTokenExpired(token) {
@@ -24,11 +25,11 @@ class AuthService {
   }
   login(idToken) {
     localStorage.setItem("id_token", idToken);
-    window.location.assign("/");
+    window.location.assign("/home");
   }
   logout() {
     localStorage.removeItem("id_token");
-    window.location.assign("/");
+    window.location.assign("/home");
   }
 }
 export default new AuthService();
