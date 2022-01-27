@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Form.css'
 import LOGO from '../../img/RAVERSOUTLET.png';
+import HomeImg from '../../img/home.png';
 import { useMutation } from "@apollo/client";
 import { LOGIN_USER } from "../../utils/mutations";
 
@@ -60,7 +61,7 @@ function Login() {
                     <button onClick={handleFormSubmit} className='form-btn'>Enter</button>
                 </form>
             </div>
-            <img className='ravers-logo' alt='raversoutlet' src={LOGO}/>
+            <img className='ravers-logo' alt='raversoutlet' src={HomeImg}/>
         </div>
     )
 }
