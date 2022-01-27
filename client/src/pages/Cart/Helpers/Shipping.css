@@ -1,0 +1,21 @@
+.paraShipping {
+  color: rgb(117, 116, 116);
+  text-align: center;
+}
+.shippingText {
+  color: #573ba3;
+  padding-right: 7px;
+}
+.shippingIcon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+@media (max-width: 763px) {
+  .paraShipping {
+    margin: 0;
+    font-size: 12px;
+  }
+  .hr {
+    display: none;
+  }
+}
