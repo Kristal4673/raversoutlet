@@ -25,7 +25,7 @@ You’ll need to use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Seq
 ```
 
 ```
-Finally you will enter the last command to connect to the server: 
+Command to connect to the server: 
 ```bash
   npm start
 ```
