@@ -22,12 +22,11 @@ export const QUERY_PRODUCT = gql`
     }
   }
 `;
-// export const PRODUCTS_CATEGORY = gql`
-//   query {
-//   category{
-//     products {
-//       _id
-//       name
-//     }
-//   }
-// `;
+export const PRODUCTS_TOPS = gql`
+  query ($category: String) {
+    productsCategory(category: $category) {
+      _id
+      name
+    }
+  }
+`;
