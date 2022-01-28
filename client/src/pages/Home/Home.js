@@ -2,6 +2,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+
 import "./Home.css";
 
 function Home() {
@@ -15,8 +16,10 @@ function Home() {
             <Link className="link-btn" to="/login">
               Login
             </Link>
+          </Button>
+          <Button>
             <Link className="link-btn" to="/signup">
-              Signup
+              Sign up!
             </Link>
           </Button>
         </div>

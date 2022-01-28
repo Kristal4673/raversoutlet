@@ -30,3 +30,12 @@
   transform: translate(-50%, -50%);
   color: rgb(243, 4, 4);
 }
+.link-btn {
+  size: lg;
+  height: 48px;
+  width: 200px;
+  border: 2px;
+  color:black;
+  border-color: white;
+
+}
