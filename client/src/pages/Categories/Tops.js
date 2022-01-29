@@ -1,14 +1,15 @@
 import { useQuery } from "@apollo/client";
 import React from "react";
-import { QUERY_PRODUCTS } from "../../utils/queries";
+import { PRODUCTS_TOPS } from "../../utils/queries";
 import "../Product/Product.css";
 
 import ProductCard from "../../Components/ProductCard/ProductCard";
 
 const Tops = () => {
-  const url = window.location.href;
-  const category = url.substring(27);
-  const { loading, error, data: category } = useQuery(QUERY_PRODUCTS);
+  const category = "Tops";
+  const { loading, error, data } = useQuery(PRODUCTS_TOPS, {
+    variables: category,
+  });
 
   if (error) {
     console.log("error", error);
@@ -17,19 +18,19 @@ const Tops = () => {
   if (loading) {
     return <div>Loading...</div>;
   }
-
-  const allShirts = categoryData.category;
+  const shirts = data.productsCategory;
+  console.log(shirts);
 
   return (
     <div>
       <div className="products-ctn">
-        {allShirts.map((product) => {
+        {shirts.map((top) => {
           return (
-            <a href={`shop/${product._id}`}>
+            <a href={`shop/${top._id}`}>
               <ProductCard
-                name={product.name}
-                quantity={product.quantity}
-                price={product.price}
+                name={top.name}
+                quantity={top.quantity}
+                price={top.price}
               />
             </a>
           );
