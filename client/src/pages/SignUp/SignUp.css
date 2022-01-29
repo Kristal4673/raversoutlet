@@ -30,3 +30,14 @@ div.card{
     font-size: 30px;
     text-align: center;
 }
+
+.form-ctn{
+    position: absolute;
+    z-index: 0;
+    color: white;
+    margin: 150px 0;
+    border: 1px solid black;
+    padding: 3%;
+    border-radius: 1em;
+    background-color: rgba(63, 63, 63, 0.6);
+}

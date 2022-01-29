@@ -91,7 +91,7 @@ const Signup = () => {
               <input
                 className="form-input"
                 placeholder="city"
-                name="city"
+                name="City"
                 type="text"
                 value={formState.city}
                 onChange={handleChange}
@@ -99,14 +99,14 @@ const Signup = () => {
               <input
                 className="form-input"
                 placeholder="state"
-                name="state"
+                name="State"
                 type="text"
                 value={formState.state}
                 onChange={handleChange}
               />
               <input
                 className="form-input"
-                placeholder="zipCode"
+                placeholder="ZIP Code"
                 name="zipcode"
                 type="text"
                 value={formState.zipcode}
