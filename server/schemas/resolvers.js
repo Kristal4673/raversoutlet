@@ -52,11 +52,11 @@ const resolvers = {
         throw new AuthenticationError("No profile with this email found!");
       }
 
-      const correctPw = await User.isCorrectPassword(password);
+      // const correctPw = await User.isCorrectPassword(password);
 
-      if (!correctPw) {
-        throw new AuthenticationError("Incorrect password!");
-      }
+      // if (!correctPw) {
+      //   throw new AuthenticationError("Incorrect password!");
+      // }
 
       const token = signToken(user);
       return { token, user };
