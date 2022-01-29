@@ -22,12 +22,6 @@ const resolvers = {
     category: async (parent, { categoryId }) => {
       return Category.findOne({ _id: categoryId });
     },
-<<<<<<< HEAD
-    productsCategory: async (parent, { category }) => {
-      // console.log(category);
-      return Product.find({ category: "Tops"});
-
-=======
     productsTops: async (parent, { category }) => {
       // console.log(category);
       return Product.find({ category: "Tops" });
@@ -40,7 +34,6 @@ const resolvers = {
     },
     productsAccs: async (parent, { category }) => {
       return Product.find({ category: "Accessories" });
->>>>>>> main
     },
   },
 

@@ -33,7 +33,7 @@ const NavBar = () => {
   return (
     <div className="custom-navbar">
       <div className="logo-ctn">
-        <a href="/home">
+        <a href="/">
           <img className="navbar-logo" src={LOGO} />
         </a>
       </div>
