@@ -29,7 +29,7 @@ function App() {
         <Navbar />
         {/* <Main /> */}
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Main />} />
           <Route path="/login" element={<Login />} />
           <Route path="/checkout" element={<Checkout />} />
