@@ -9,14 +9,16 @@ function Home() {
   return (
     <div className="hero-image">
       <div className="hero-text">
-        <h1>Raver's Outlet!</h1>
-        <p>We provide all of your headbanging gear!</p>
+        <h1 className="display-2">Raver's Outlet!</h1>
+        <p className="lead">We provide all of your headbanging gear!</p>
         <div>
           <Button>
             <Link className="link-btn" to="/login">
               Login
             </Link>
           </Button>
+          <br />
+          <br />
           <Button>
             <Link className="link-btn" to="/signup">
               Sign up!
