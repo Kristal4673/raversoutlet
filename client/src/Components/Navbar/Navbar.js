@@ -32,8 +32,8 @@ const NavBar = () => {
           <div>
             <a href="/tops">TOPS</a>
             <a href="/bottoms">BOTTOMS</a>
-            <a href="/">SHOES</a>
-            <a href="/">ACCESSORIES</a>
+            <a href="/shoes">SHOES</a>
+            <a href="/accessories">ACCESSORIES</a>
           </div>
           <a href="/shop">SEARCH</a>
         </div>
