@@ -25,6 +25,7 @@ const resolvers = {
     productsCategory: async (parent, { category }) => {
       console.log(category);
       return Product.find({ category: "Tops", category: "Bottoms" });
+
     },
   },
 
