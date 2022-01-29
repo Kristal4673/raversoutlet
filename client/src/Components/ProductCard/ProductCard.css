@@ -25,10 +25,12 @@
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-.product-card-body{
-    justify-self: baseline;   
-    display: flex;
-    align-items: baseline;
-
+.products-card-body{
+    padding: 2%;
+    background-color: rgba(0, 0, 0, .1);
     width: 100%;
+    border: 1px solid black;
+    border-radius: 1em;
 }
+
+

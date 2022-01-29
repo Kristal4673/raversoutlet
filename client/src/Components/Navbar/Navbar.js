@@ -16,8 +16,19 @@ import LOGO from "../../img/RAVERSOUTLET.png";
 
 const NavBar = () => {
   const [login, setLogin] = useState(false);
+  const handleLogout = () =>{
+    Auth.logout();
+  }
 
-  useEffect(() => {});
+  const [toggleCategories, setToggleCategories] = useState(false);
+
+  const handleToggleCategories = () => {
+    if(window.innerWidth) setToggleCategories(!toggleCategories);
+  }
+
+  useEffect(()=>{
+
+  })
 
   return (
     <div className="custom-navbar">
@@ -28,20 +39,25 @@ const NavBar = () => {
       </div>
       <div className="navbar-itmes">
         <div className="navbar-items-left">
-          <i class="fas fa-bars hamburger-menu"></i>
-          <div>
-
+          <i className={`fas fa-arrow-down hamburger-menu`} onClick={handleToggleCategories}></i>
+          <div className={`navbar-links`} style={toggleCategories ? {display: 'flex'} : {}}>
             <a href="/tops">TOPS</a>
             <a href="/">BOTTOMS</a>
             <a href="/">SHOES</a>
             <a href="/">ACCESSORIES</a>
           </div>
-          <a href="/shop">SEARCH</a>
+          <div className="navbar-icons">
+            <a href="/shop" className="custom-icon fas fa-search"></a>
+            <a className="custom-icon fas fa-shopping-cart"></a>
+          </div>
         </div>
         <div className="navbar-items-right">
-          <a href="/login">LOGIN</a>
-          <a href="/signup">SIGN UP</a>
-          <a href="/">LOGOUT</a>
+          {Auth.loggedIn() ? <a onClick={handleLogout} href="/">LOGOUT</a> : 
+          <>
+            <a href="/login">LOGIN</a>
+            <a href="/signup">SIGN UP</a>
+          </>
+          }
         </div>
       </div>
     </div>
