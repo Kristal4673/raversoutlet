@@ -55,7 +55,10 @@ const typeDefs = gql`
     categories: [Category]!
     category(categoryId: ID): Category!
 
-    productsCategory(category: String): [Product]
+    productsTops(category: String): [Product]
+    productsBottoms(category: String): [Product]
+    productsShoes(category: String): [Product]
+    productsAccs(category: String): [Product]
   }
 
   type Mutation {

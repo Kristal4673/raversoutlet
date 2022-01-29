@@ -42,9 +42,9 @@ const NavBar = () => {
           <i className={`fas fa-arrow-down hamburger-menu`} onClick={handleToggleCategories}></i>
           <div className={`navbar-links`} style={toggleCategories ? {display: 'flex'} : {}}>
             <a href="/tops">TOPS</a>
-            <a href="/">BOTTOMS</a>
-            <a href="/">SHOES</a>
-            <a href="/">ACCESSORIES</a>
+            <a href="/bottoms">BOTTOMS</a>
+            <a href="/shoes">SHOES</a>
+            <a href="/accessories">ACCESSORIES</a>
           </div>
           <div className="navbar-icons">
             <a href="/shop" className="custom-icon fas fa-search"></a>

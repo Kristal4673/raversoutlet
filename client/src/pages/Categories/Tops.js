@@ -18,7 +18,7 @@ const Tops = () => {
   if (loading) {
     return <div>Loading...</div>;
   }
-  const shirts = data.productsCategory;
+  const shirts = data.productsTops;
   console.log(shirts);
 
   return (

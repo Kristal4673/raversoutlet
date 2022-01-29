@@ -25,41 +25,45 @@ export const QUERY_PRODUCT = gql`
 
 export const PRODUCTS_TOPS = gql`
   query ($category: String) {
-    productsCategory(category: $category) {
+    productsTops(category: $category) {
       _id
       name
       price
       quantity
+      category
     }
   }
 `;
-export const PRODUCTS_Bottoms = gql`
+export const PRODUCTS_BOTTOMS = gql`
   query ($category: String) {
-    productsCategory(category: $category) {
+    productsBottoms(category: $category) {
       _id
       name
       price
       quantity
+      category
     }
   }
 `;
 export const PRODUCTS_SHOES = gql`
   query ($category: String) {
-    productsCategory(category: $category) {
+    productsShoes(category: $category) {
       _id
       name
       price
       quantity
+      category
     }
   }
 `;
-export const PRODUCTS_ACCESSORIES = gql`
+export const PRODUCTS_ACCS = gql`
   query ($category: String) {
-    productsCategory(category: $category) {
+    productsAccs(category: $category) {
       _id
       name
       price
       quantity
+      category
     }
   }
 `;

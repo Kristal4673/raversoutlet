@@ -19,7 +19,9 @@ import SignUp from "./pages/SignUp/SignUp";
 import { Profiler } from "react";
 import Shop from "./pages/Shop/Shop";
 import Tops from "./pages/Categories/Tops";
-
+import Bottoms from "./pages/Categories/Bottoms";
+import Shoes from "./pages/Categories/Shoes";
+import Accessories from "./pages/Categories/Accessories";
 function App() {
   return (
     <div className="App">
@@ -40,6 +42,9 @@ function App() {
           <Route path="/shop/:id" element={<Product />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/tops" element={<Tops />} />
+          <Route path="/bottoms" element={<Bottoms />} />
+          <Route path="/shoes" element={<Shoes />} />
+          <Route path="/accessories" element={<Accessories />} />
         </Routes>
       </Router>
       <Footer />
