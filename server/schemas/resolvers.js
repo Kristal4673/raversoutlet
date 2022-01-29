@@ -23,8 +23,9 @@ const resolvers = {
       return Category.findOne({ _id: categoryId });
     },
     productsCategory: async (parent, { category }) => {
-      console.log(category)
-      return Product.find({ "Tops" });
+      console.log(category);
+      return Product.find({ category: "Tops", category: "Bottoms" });
+
     },
   },
 
