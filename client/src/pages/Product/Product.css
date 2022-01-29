@@ -32,6 +32,24 @@
     font-weight: 300;
 }
 
+.product-add-btn{
+    display: block;
+    background-color: rgba(128, 7, 149, 0.739);
+    border:none;
+    padding: 1% 4%;
+    transition: background-color 1s ease-out;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.product-add-btn:hover{
+    background-color: rgb(0, 0, 0, .5);
+}
+
+.product-add-btn:active{
+    border: 1px solid black;
+}
+
 @keyframes rotation {
     from {
       transform: rotateZ(0deg);
