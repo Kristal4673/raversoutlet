@@ -22,6 +22,7 @@ div.card{
     display: flex;
     flex-direction: column;
     margin-top: 5%;
+    justify-content: center;
 }
 
 .form-title{

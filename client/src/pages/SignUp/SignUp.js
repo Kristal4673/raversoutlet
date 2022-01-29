@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Form from "react-bootstrap";
-import "./SignUp.css";
+// import Form from "react-bootstrap";
+import './SignUp.css'
 
 // import { useMutation } from "@apollo/client";
 // import { ADD_PROFILE } from "../../utils/mutations";
@@ -56,96 +56,100 @@ const Signup = () => {
           <div className="card-body m-2">
 
             <form onSubmit={handleFormSubmit}>
-              <input
-                className="form-input"
-                placeholder="First Name "
-                name="firstName"
-                type="text"
-                value={formState.firstName}
-                onChange={handleChange}
-              />
-              <input
-                className="form-input"
-                placeholder="Last Name"
-                name="lastName"
-                type="text"
-                value={formState.lastName}
-                onChange={handleChange}
-              />
-              <input
-                className="form-input"
-                placeholder="Phone Number"
-                name="number"
-                type="text"
-                value={formState.number}
-                onChange={handleChange}
-              />
-              <input
-                className="form-input"
-                placeholder="Street Address"
-                name="street_address"
-                type="text"
-                value={formState.street_address}
-                onChange={handleChange}
-              />
-              <input
-                className="form-input"
-                placeholder="city"
-                name="City"
-                type="text"
-                value={formState.city}
-                onChange={handleChange}
-              />
-              <input
-                className="form-input"
-                placeholder="state"
-                name="State"
-                type="text"
-                value={formState.state}
-                onChange={handleChange}
-              />
-              <input
-                className="form-input"
-                placeholder="ZIP Code"
-                name="zipcode"
-                type="text"
-                value={formState.zipcode}
-                onChange={handleChange}
-              />
-              <input
-                className="form-input"
-                placeholder="email"
-                name="email"
-                type="email"
-                value={formState.email}
-                onChange={handleChange}
-              />
-              <input
-                className="form-input"
-                placeholder="Password"
-                name="password"
-                type="password"
-                value={formState.password}
-                onChange={handleChange}
-              />
-              <input
-                className="form-input"
-                placeholder="confirm password"
-                name="password"
-                type="password"
-                value={formState.password}
-                onChange={handleChange}
-              />
-              <button
-                className="btn btn-block btn-info"
-                style={{ cursor: "pointer" }}
-                type="submit"
-              >
+              <div className="mb-3">
+                <input
+                  className="form-input"
+                  placeholder="First Name "
+                  name="firstName"
+                  type="text"
+                  value={formState.firstName}
+                  onChange={handleChange}
+                />
+                <input
+                  className="form-input"
+                  placeholder="Last Name"
+                  name="lastName"
+                  type="text"
+                  value={formState.lastName}
+                  onChange={handleChange}
+                />
+                <input
+                  className="form-input"
+                  placeholder="Phone Number"
+                  name="number"
+                  type="text"
+                  value={formState.number}
+                  onChange={handleChange}
+                />
+                <input
+                  className="form-input"
+                  placeholder="Street Address"
+                  name="street_address"
+                  type="text"
+                  value={formState.street_address}
+                  onChange={handleChange}
+                />
+                <input
+                  className="form-input"
+                  placeholder="city"
+                  name="City"
+                  type="text"
+                  value={formState.city}
+                  onChange={handleChange}
+                />
+                <input
+                  className="form-input"
+                  placeholder="state"
+                  name="State"
+                  type="text"
+                  value={formState.state}
+                  onChange={handleChange}
+                />
+                <input
+                  className="form-input"
+                  placeholder="ZIP Code"
+                  name="zipcode"
+                  type="text"
+                  value={formState.zipcode}
+                  onChange={handleChange}
+                />
+                <input
+                  className="form-input"
+                  placeholder="email"
+                  name="email"
+                  type="email"
+                  value={formState.email}
+                  onChange={handleChange}
+                />
+                <input
+                  className="form-input"
+                  placeholder="Password"
+                  name="password"
+                  type="password"
+                  value={formState.password}
+                  onChange={handleChange}
+                />
+                <input
+                  className="form-input"
+                  placeholder="confirm password"
+                  name="password"
+                  type="password"
+                  value={formState.password}
+                  onChange={handleChange}
+                />
+               </div> 
+                <button
+                  className="btn btn-block btn-info"
+                  style={{ cursor: "pointer" }}
+                  type="submit"
+                >
                 Submit
               </button>
             </form>
+
           </div>
         </div>
+        <div className="col-0-sm"></div>
       </div>
     </main>
   );
