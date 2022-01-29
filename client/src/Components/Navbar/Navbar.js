@@ -48,7 +48,7 @@ const NavBar = () => {
           </div>
           <div className="navbar-icons">
             <a href="/shop" className="custom-icon fas fa-search"></a>
-            <a className="custom-icon fas fa-shopping-cart"></a>
+            <a href="/cart" className="custom-icon fas fa-shopping-cart"></a>
           </div>
         </div>
         <div className="navbar-items-right">
