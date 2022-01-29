@@ -10,7 +10,7 @@ function Home() {
     <div className="hero-image">
       <div className="hero-text">
         <h1 className="hero-title">Raver's Outlet</h1>
-        <p>We provide all of your headbanging gear!</p>
+        <p className="h4">We provide all of your headbanging gear!</p>
         <div>
           <Button>
             <Link className="link-btn" to="/login">
@@ -24,9 +24,9 @@ function Home() {
           </Button>
         </div>
         <Button>
-            <Link className="link-btn" to="/shop">
-              START SHOPPING
-            </Link>
+          <Link className="link-btn" to="/shop">
+            START SHOPPING
+          </Link>
         </Button>
       </div>
     </div>
