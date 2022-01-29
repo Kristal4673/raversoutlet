@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
-const Category = require('./Category');
-const categorySchema = Category.schema;
+
 const { Schema } = mongoose;
 
 const productSchema = new Schema({
@@ -25,10 +24,9 @@ const productSchema = new Schema({
     type: String,
   },
   category: {
-    // type: categorySchema,
     type: String,
     ref: "Category",
-    // required: true,
+    required: true,
   },
 });
 

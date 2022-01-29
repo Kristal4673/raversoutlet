@@ -30,9 +30,8 @@ const NavBar = () => {
         <div className="navbar-items-left">
           <i class="fas fa-bars hamburger-menu"></i>
           <div>
-
             <a href="/tops">TOPS</a>
-            <a href="/">BOTTOMS</a>
+            <a href="/bottoms">BOTTOMS</a>
             <a href="/">SHOES</a>
             <a href="/">ACCESSORIES</a>
           </div>

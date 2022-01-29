@@ -22,10 +22,12 @@ const resolvers = {
     category: async (parent, { categoryId }) => {
       return Category.findOne({ _id: categoryId });
     },
-    productsCategory: async (parent, { category }) => {
-      console.log(category);
-      return Product.find({ category: "Tops", category: "Bottoms" });
-
+    productsTops: async (parent, { category }) => {
+      // console.log(category);
+      return Product.find({ category: "Tops" });
+    },
+    productsBottoms: async (parent, { category }) => {
+      return Product.find({ category: "Bottoms" });
     },
   },
 
