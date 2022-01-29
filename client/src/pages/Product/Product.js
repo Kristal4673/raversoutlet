@@ -41,6 +41,7 @@ const Product = () => {
         <p>${price}</p>
         <p>{quantity} LEFT IN STOCK</p>
         <p>CATEGORY: {category}</p>
+        <button className='product-add-btn'>ADD TO CART</button>
       </div>
     </div>
   );
