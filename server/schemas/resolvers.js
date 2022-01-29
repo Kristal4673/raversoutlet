@@ -29,6 +29,12 @@ const resolvers = {
     productsBottoms: async (parent, { category }) => {
       return Product.find({ category: "Bottoms" });
     },
+    productsShoes: async (parent, { category }) => {
+      return Product.find({ category: "Shoes" });
+    },
+    productsAccs: async (parent, { category }) => {
+      return Product.find({ category: "Accessories" });
+    },
   },
 
   Mutation: {

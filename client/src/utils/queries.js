@@ -45,3 +45,25 @@ export const PRODUCTS_BOTTOMS = gql`
     }
   }
 `;
+export const PRODUCTS_SHOES = gql`
+  query ($category: String) {
+    productsShoes(category: $category) {
+      _id
+      name
+      price
+      quantity
+      category
+    }
+  }
+`;
+export const PRODUCTS_ACCS = gql`
+  query ($category: String) {
+    productsAccs(category: $category) {
+      _id
+      name
+      price
+      quantity
+      category
+    }
+  }
+`;
