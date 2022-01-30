@@ -1,5 +1,5 @@
 import * as React from "react";
-import styles from "./SingleItem.css";
+import styles from "./SingleItem.module.css";
 import StockController from "../Helpers/StockController";
 
 const SingleItem = (props) => {

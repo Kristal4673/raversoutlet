@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Shipping.css";
+import styles from "./Shipping.module.css";
 const Shipping = () => {
   return (
     <div className={styles.freeShipping}>

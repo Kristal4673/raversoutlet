@@ -1,4 +1,4 @@
-import styles from "./StockController.css";
+import styles from "./StockController.module.css";
 // import { AiFillCheckCircle } from "react-icons/ai";
 // import { FaArrowCircleDown } from "react-icons/fa";
 // import { MdCancel } from "react-icons/md";
