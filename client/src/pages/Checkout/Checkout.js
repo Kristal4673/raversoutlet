@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Checkout.css";
+import styles from "./Checkout.module.css";
 import GeneralForm from "../../Components/Forms/Helpers/GeneralForm";
 import { Button, Card, Col, Row } from "react-bootstrap";
 import SingleItem from "../Cart/Helpers/SingleItem";
