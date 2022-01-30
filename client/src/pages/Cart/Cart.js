@@ -1,5 +1,5 @@
 import * as React from "react";
-import styles from "./Cart.css";
+import styles from "./Cart.module.css";
 import Shipping from "./Helpers/Shipping";
 import { Form } from "react-bootstrap";
 import SingleItem from "./Helpers/SingleItem";
