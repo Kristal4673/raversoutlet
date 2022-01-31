@@ -23,9 +23,11 @@ function Footer() {
                         <h6 className='title-get-in-touch'>get in touch</h6>
                         <p> Any questions? Click on any of <br />our social media links below and <br />write us a message regarding your <br />issue or submit your email in the <br />section to the right. </p>
                         <ul className='list-unstyled'>
-                            <li className='social'><i class="fab fa-facebook-f"></i></li>
-                            <li className='social'><i class="fab fa-instagram"></i></li>
-                            <li className='social'><i class="fab fa-twitter"></i></li>
+                            <li className='social'> <a href="https://www.facebook.com">  <i class="fab fa-facebook-f"></i> </a> </li>
+
+                            <li className='social'> <a href="https://www.instagram.com"> <i class="fab fa-instagram"></i> </a> </li>
+
+                            <li className='social'> <a href="https://www.twitter.com"> <i class="fab fa-twitter"></i></a></li>
                         </ul>
                     </div>
                     {/* Column 3 */}
