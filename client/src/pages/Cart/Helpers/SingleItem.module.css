@@ -1,0 +1,142 @@
+.productWrapper {
+  background-color: white;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.mainDetailDiv {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  position: relative;
+}
+
+.imgSize {
+  width: 100px;
+  height: 120px;
+  object-fit: fill;
+}
+.mainDetailPara {
+  margin: 0;
+}
+.bookAuthor {
+  color: grey;
+}
+.nameAuthorDiv {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  align-self: flex-start;
+}
+.nameAuthorDiv p {
+  margin: 7px 0px 0px 0px;
+}
+.priceDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-self: flex-start;
+}
+.priceDiv p {
+  margin-bottom: 5px;
+}
+.controllerDiv {
+  margin-right: 15px;
+  width: 80px;
+}
+.ourPrice {
+  color: #de2454;
+  font-size: 20px;
+}
+.marketPrice {
+  color: grey;
+  text-decoration: line-through;
+}
+.sale {
+  color: black;
+}
+.icons {
+  font-size: 18px;
+  margin-right: 5px;
+  color: grey;
+}
+.iconsD:hover {
+  color: #de2454;
+}
+.priceDivSM {
+  display: none;
+}
+.priceSM {
+  display: none;
+}
+@media (max-width: 940px) {
+  .bookName {
+    font-size: 12px;
+    margin: 0 !important;
+    font-weight: bold;
+  }
+  .bookAuthor {
+    font-size: 9px;
+    margin: 0 !important;
+  }
+  .productWrapper {
+    padding: 3px 0px 0 0;
+  }
+  .priceDiv {
+    display: block;
+
+    padding: 0 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .controllerDiv {
+    margin-left: 9px;
+  }
+  .displayNone {
+    display: none;
+  }
+  /* .priceDiv {
+    display: none;
+  } */
+  /* .priceSM {
+    display: unset;
+    color: rgb(167, 11, 11);
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 2px;
+  } */
+}
+@media (max-width: 520px) {
+  .nameAuthorDiv {
+    margin-left: 5px;
+  }
+  .controllerDiv {
+    margin-right: 5px;
+    width: 70px;
+  }
+  .bookName {
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .ourPrice {
+    color: #de2454;
+    font-size: 14px;
+  }
+  .priceDiv {
+    padding: 0 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .iconPara {
+    display: flex;
+  }
+  .imgSize {
+    width: 60px;
+    height: 80px;
+  }
+}

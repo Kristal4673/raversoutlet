@@ -33,7 +33,7 @@
     "name": "LED light up sneakers",
     "price": "80",
     "quantity": "15",
-    "category": "Shoe"
+    "category": "Shoes"
   },
   {
     "name": "Rainbow skirt",
@@ -81,19 +81,19 @@
     "name": "Suns Out Guns Out Tank",
     "price": "15",
     "quantity": "15",
-    "category": "Top"
+    "category": "Tops"
   },
   {
     "name": "Bunny Onesie",
     "price": "25",
     "quantity": "15",
-    "category": "Top"
+    "category": "Tops"
   },
   {
     "name": "PLUR Crop top",
     "price": "25",
     "quantity": "15",
-    "category": "Top"
+    "category": "Tops"
   },
   {
     "name": "Pink Tutu",
@@ -106,5 +106,59 @@
     "price": "45",
     "quantity": "15",
     "category": "Shoes"
+  },
+  {
+    "name": "Rainbow Converse",
+    "price": "45",
+    "quantity": "15",
+    "category": "Shoes"
+  },
+  {
+    "name": "Jesus sandals",
+    "price": "20",
+    "quantity": "15",
+    "category": "Shoes"
+  },
+  {
+    "name": "Glitter Platform boots",
+    "price": "80",
+    "quantity": "15",
+    "category": "Shoes"
+  },
+  {
+    "name": "OG Converse",
+    "price": "45",
+    "quantity": "15",
+    "category": "Shoes"
+  },
+  {
+    "name": "Shark Onesie",
+    "price": "25",
+    "quantity": "25",
+    "category": "Tops"
+  },
+  {
+    "name": "Rave Leg Wraps",
+    "price": "10",
+    "quantity": "25",
+    "category": "Accessories"
+  },
+  {
+    "name": "Holographic Mini Skirt",
+    "price": "25",
+    "quantity": "25",
+    "category": "Bottoms"
+  },
+  {
+    "name": "Bunny Ears",
+    "price": "15",
+    "quantity": "25",
+    "category": "Accessories"
+  },
+  {
+    "name": "LED Hat",
+    "price": "30",
+    "quantity": "25",
+    "category": "Accessories"
   }
 ]

@@ -7,6 +7,13 @@ const categorySchema = new Schema({
     type: String,
     required: true,
   },
+  products: [
+    {
+      type: String,
+      ref: "Category",
+      required: true,
+    },
+  ],
 });
 
 const Category = mongoose.model("Category", categorySchema);

@@ -14,7 +14,7 @@
     justify-content: flex-end;
     align-items:flex-start;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, .4);
+    /* background-color: rgba(255, 255, 255, .4); */
     border-radius: 1rem;
     transition: all .5s;
 
@@ -22,13 +22,25 @@
 }
 
 .product:hover{
-    background-color: rgba(255, 255, 255, 0.4);
+    /* background-color: rgba(255, 255, 255, 0.4); */
 }
 
-.product-card-body{
-    justify-self: baseline;   
-    display: flex;
-    align-items: baseline;
+.products-card-body:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
 
+.products-card-body{
+    padding: 2%;
+    background-color: rgba(0, 0, 0, .1);
     width: 100%;
+    border: 1px solid rgb(197, 62, 250);
+    border-radius: 1em;
+    color: white;
+    transition: background-color 1s ease-out;
 }
+
+.products-card-body h2, p{
+    text-decoration: none;
+}
+
+

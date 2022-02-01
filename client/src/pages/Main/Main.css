@@ -1,17 +1,20 @@
 .products-ctn{
-    margin: 0 1rem;
+    box-sizing: border-box;
+    /* margin: 0 1rem; */
+    padding: 0 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 10px;
     column-gap: 10px;
-
+    min-height: 500px;
     
 }
 
 @media only screen and (min-width: 960px){
     .products-ctn{
+        padding: 0 5rem;
         grid-template-columns: 1fr 1fr 1fr;
-        margin: 0 10rem;
+        /* margin: 0 10rem; */
     }
 
     .main-filter{

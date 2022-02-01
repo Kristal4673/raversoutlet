@@ -1,0 +1,83 @@
+.stock {
+  font-weight: bold;
+  color: green;
+  font-size: medium;
+}
+.stockLow {
+  color: rgb(221, 84, 29);
+  font-size: 14px;
+  font-weight: bold;
+}
+.stockFinish {
+  color: red;
+  font-size: medium;
+  font-weight: bold;
+}
+.displayNone {
+  display: none;
+}
+.buttonGroup {
+  display: flex;
+}
+.minusButton,
+.plusButton {
+  width: 20px;
+  background-color: #de2454;
+  color: white;
+  height: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+.minusButton {
+  border-radius: 4rem 0 0 4rem;
+}
+.plusButton {
+  border-radius: 0 4rem 4rem 0;
+}
+.minusButton p,
+.plusButton p {
+  font-weight: bolder;
+  font-size: 20px;
+  position: relative;
+  bottom: 2px;
+}
+
+.Display {
+  background-color: rgb(255, 255, 255);
+  width: 40px;
+  height: 25px;
+  text-align: center;
+  border: 1px solid #de2454;
+  padding-top: 2px;
+  /* margin: 0 10px; */
+}
+.buttonGroupPosition {
+  margin-bottom: 20px;
+}
+.stockAndButton {
+  margin-top: 10px;
+}
+.checkIcon {
+  color: green;
+  position: relative;
+  bottom: 3px;
+}
+.arrowDownIcon {
+  position: relative;
+  bottom: 3px;
+}
+.cancelIcon {
+  position: relative;
+  bottom: 2px;
+}
+@media (max-width: 650px) {
+  .stock {
+    font-size: x-small;
+  }
+  .stockLow {
+    font-size: x-small;
+  }
+  .stockFinish {
+    font-size: x-small;
+  }
+}

@@ -9,8 +9,8 @@ function Home() {
   return (
     <div className="hero-image">
       <div className="hero-text">
-        <h1>Raver's Outlet!</h1>
-        <p>We provide all of your headbanging gear!</p>
+        <h1 className="hero-title">Raver's Outlet</h1>
+        <p className="h4">We provide all of your headbanging gear!</p>
         <div>
           <Button>
             <Link className="link-btn" to="/login">
@@ -19,10 +19,15 @@ function Home() {
           </Button>
           <Button>
             <Link className="link-btn" to="/signup">
-              Sign up!
+              Sign up
             </Link>
           </Button>
         </div>
+        <Button>
+          <Link className="link-btn" to="/shop">
+            START SHOPPING
+          </Link>
+        </Button>
       </div>
     </div>
   );

@@ -71,6 +71,9 @@ p {
     font-size: 1.4rem;
     display: inline;
     margin: 0 5%;
+    background: linear-gradient(to right, rgb(255, 238, 0), rgb(241, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -82,23 +85,95 @@ p {
     /* filter: brightness(200%); */
 }
 
-.neil:hover::before {
+.neil:hover {
     text-transform: uppercase;
+    background: linear-gradient(to right, rgb(255, 238, 0), rgb(241, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.neil:before {
     content: 'neil';
     position: absolute;
     mix-blend-mode: difference;
-    filter: blur(3px);
-
+    filter: blur(4px);
 }
+
+.neil {
+    filter: brightness(200%);  
+}
+
+
+
 .gustavo:hover {
     text-transform: uppercase;
+    background: linear-gradient(to right, rgb(255, 238, 0), rgb(241, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+.gustavo:before {
+    content: 'neil';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(4px);
+}
+
+.gustavo {
+    filter: brightness(200%);  
+}
+
 .brandon:hover {
     text-transform: uppercase;
+    background: linear-gradient(to right, rgb(255, 238, 0), rgb(241, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+.brandon:before {
+    content: 'neil';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(4px);
+}
+
+.brandon {
+    filter: brightness(200%);  
+}
+
+
 .crystal:hover {
     text-transform: uppercase;
+    background: linear-gradient(to right, rgb(255, 238, 0), rgb(241, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+.crystal:before {
+    content: 'neil';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(4px);
+}
+
+.crystal {
+    filter: brightness(200%);  
+}
+
 .caitlyn:hover {
     text-transform: uppercase;
+    background: linear-gradient(to right, rgb(255, 238, 0), rgb(241, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.caitlyn:before {
+    content: 'neil';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(4px);
+}
+
+.caitlyn {
+    filter: brightness(200%);  
 }
