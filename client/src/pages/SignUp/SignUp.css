@@ -10,4 +10,35 @@ div.card{
 
 .form{
     /* display: block;  */
+    padding-bottom: 500px;
+    height: 87%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.form-title{
+    /* background-color: rgb(0, 0, 0, .5); */
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+
+.form-ctn{
+    position: absolute;
+    z-index: 0;
+    color: white;
+    margin: 150px 0;
+    border: 1px solid black;
+    padding: 3%;
+    border-radius: 1em;
+    background-color: rgba(63, 63, 63, 0.6);
 }
