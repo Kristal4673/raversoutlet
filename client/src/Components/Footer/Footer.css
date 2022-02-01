@@ -30,6 +30,15 @@ h6 {
     filter: blur(3px);
 }
 
+.title-categories li {
+    background: linear-gradient(to right, rgb(255, 238, 0), rgb(241, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(3px);
+}
+
 .title-get-in-touch::before {
     content: 'get in touch';
     position: absolute;
@@ -50,6 +59,7 @@ h6 {
     mix-blend-mode: difference;
     filter: blur(3px);
 }
+
 
 
 
